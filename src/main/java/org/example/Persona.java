@@ -36,6 +36,9 @@ public class Persona {
     public void cumplirAnyos(){
         edad++;
     }
+    public void imprimirDNI(){
+        System.out.println("Persona: " + DNI);
+    }
 
     @Override
     public boolean equals(Object obj){
