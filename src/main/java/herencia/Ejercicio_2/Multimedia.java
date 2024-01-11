@@ -42,9 +42,10 @@ public class Multimedia {
                 " duración=" + duracion + '\n'
                 ;
     }
+
     @Override
     public boolean equals(Object obj) {
-        if (obj==null) return false;
+        if (obj == null) return false;
         if (!(obj instanceof Multimedia)) return false;
         Multimedia m = (Multimedia) obj;
         return m.titulo.equals(titulo) &&

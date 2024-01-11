@@ -33,16 +33,17 @@ public class Persona {
         this.edad = edad;
     }
 
-    public void cumplirAnyos(){
+    public void cumplirAnyos() {
         edad++;
     }
-    public void imprimirDNI(){
+
+    public void imprimirDNI() {
         System.out.println("Persona: " + DNI);
     }
 
     @Override
-    public boolean equals(Object obj){
-        if (obj==null) return false;
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
         if (!(obj instanceof Persona)) return false;
         Persona p = (Persona) obj;
         return p.DNI == DNI &&

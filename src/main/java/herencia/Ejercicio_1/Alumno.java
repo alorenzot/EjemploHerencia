@@ -7,7 +7,7 @@ public class Alumno extends Persona {
     //Sin NIA
     public Alumno(String nombre, String apellidos, String DNI, int edad, TipoEstudio tipoEstudio) {
         super(nombre, apellidos, DNI, edad);
-        this.NIA=generarNIA();
+        this.NIA = generarNIA();
         this.tipoEstudio = tipoEstudio;
     }
 
@@ -18,10 +18,10 @@ public class Alumno extends Persona {
         this.tipoEstudio = tipoEstudio;
     }
 
-    private String generarNIA(){
-        String NIA="";
-        for (int i=0;i<8;i++){
-            NIA+=String.valueOf((int)(Math.random()*10));
+    private String generarNIA() {
+        String NIA = "";
+        for (int i = 0; i < 8; i++) {
+            NIA += String.valueOf((int) (Math.random() * 10));
         }
         return NIA;
     }

@@ -2,7 +2,7 @@ package herencia.Ejercicio_1;
 
 import java.util.Arrays;
 
-public class Profesor extends Persona{
+public class Profesor extends Persona {
     private TipoEstudio[] gradosImpartidos;
 
     public Profesor(String nombre, String apellidos, String DNI, int edad, TipoEstudio... gradosImpartidos) {

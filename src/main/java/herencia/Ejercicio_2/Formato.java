@@ -12,7 +12,7 @@ public enum Formato {
 
     private String formato;
 
-    Formato(String formato){
-        this.formato=formato;
+    Formato(String formato) {
+        this.formato = formato;
     }
 }

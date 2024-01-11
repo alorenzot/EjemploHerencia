@@ -24,7 +24,7 @@ public enum Genero {
 
     private String genero;
 
-    Genero(String genero){
-        this.genero=genero;
+    Genero(String genero) {
+        this.genero = genero;
     }
 }

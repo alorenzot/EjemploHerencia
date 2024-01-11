@@ -1,6 +1,6 @@
 package herencia.Ejercicio_2;
 
-public class Disco extends Multimedia{
+public class Disco extends Multimedia {
     private Genero genero;
 
     public Disco(String titulo, String autor, Formato formato, float duracion, Genero genero) {
@@ -10,11 +10,11 @@ public class Disco extends Multimedia{
 
     @Override
     public String toString() {
-        return "Disco:"  + '\n' +
+        return "Disco:" + '\n' +
                 " titulo: " + getTitulo() + '\n' +
                 " autor: " + getAutor() + '\n' +
-                " formato: " + getFormato() +  '\n' +
-                " duración: " + getDuracion() + '\n'+
+                " formato: " + getFormato() + '\n' +
+                " duración: " + getDuracion() + '\n' +
                 " genero: " + genero + '\n'
                 ;
     }
