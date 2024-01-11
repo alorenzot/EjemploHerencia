@@ -11,15 +11,6 @@ public class Pelicula extends Multimedia{
         this.actrizPrincipal = actrizPrincipal;
     }
 
-//    public Pelicula(String titulo, String autor, Formato formato, float duracion, String actor, boolean esHombre) {
-//        super(titulo, autor, formato, duracion);
-//        if (esHombre) {
-//            this.actorPrincipal=actor;
-//        } else {
-//            this.actrizPrincipal = actor;
-//        }
-//    }
-
     public Pelicula(String titulo, String autor, Formato formato, float duracion) {
         super(titulo, autor, formato, duracion);
         this.actorPrincipal=animacion;
@@ -29,12 +20,12 @@ public class Pelicula extends Multimedia{
     @Override
     public String toString() {
         return "Pelicula:" + '\n'+
-                " titulo='" + getTitulo() + '\n' +
-                " autor='" + getAutor() + '\n' +
-                " formato=" + getFormato() +  '\n' +
-                " duracion=" + getDuracion() + '\n'+
-                " actorPrincipal='" + actorPrincipal + '\n' +
-                " actrizPrincipal='" + actrizPrincipal + '\n'
+                " titulo: " + getTitulo() + '\n' +
+                " autor: " + getAutor() + '\n' +
+                " formato: " + getFormato() +  '\n' +
+                " duración: " + getDuracion() + '\n'+
+                " actorPrincipal: " + actorPrincipal + '\n' +
+                " actrizPrincipal: " + actrizPrincipal + '\n'
                 ;
 
     }

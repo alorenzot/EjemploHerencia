@@ -36,10 +36,10 @@ public class Multimedia {
     @Override
     public String toString() {
         return "Multimedia{" + '\n' +
-                " titulo='" + titulo + '\n' +
-                " autor='" + autor + '\n' +
+                " titulo=" + titulo + '\n' +
+                " autor=" + autor + '\n' +
                 " formato=" + formato +
-                " duracion=" + duracion + '\n'
+                " duración=" + duracion + '\n'
                 ;
     }
     @Override

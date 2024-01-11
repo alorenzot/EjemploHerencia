@@ -11,11 +11,11 @@ public class Disco extends Multimedia{
     @Override
     public String toString() {
         return "Disco:"  + '\n' +
-                " titulo='" + getTitulo() + '\n' +
-                " autor='" + getAutor() + '\n' +
-                " formato=" + getFormato() +  '\n' +
-                " duracion=" + getDuracion() + '\n'+
-                " genero=" + genero + '\n'
+                " titulo: " + getTitulo() + '\n' +
+                " autor: " + getAutor() + '\n' +
+                " formato: " + getFormato() +  '\n' +
+                " duración: " + getDuracion() + '\n'+
+                " genero: " + genero + '\n'
                 ;
     }
 }
