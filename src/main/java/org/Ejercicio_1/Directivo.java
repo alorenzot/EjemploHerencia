@@ -1,35 +1,38 @@
-package org.example;
+package org.Ejercicio_1;
 
 import java.util.Arrays;
 
-public class Profesor extends Persona{
+public class Directivo extends Profesor{
+    private String cargo;
     private TipoEstudio[] gradosImpartidos;
 
-    public Profesor(String nombre, String apellidos, String DNI, int edad, TipoEstudio... gradosImpartidos) {
+    public Directivo(String nombre, String apellidos, String DNI, int edad, String cargo, TipoEstudio... gradosImpartidos) {
         super(nombre, apellidos, DNI, edad);
+        this.cargo = cargo;
         this.gradosImpartidos = gradosImpartidos;
     }
 
-    public TipoEstudio[] getGradosImpartidos() {
-        return gradosImpartidos;
+    public String getCargo() {
+        return cargo;
     }
 
-    public void setGradosImpartidos(TipoEstudio[] gradosImpartidos) {
-        this.gradosImpartidos = gradosImpartidos;
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 
     @Override
     public void imprimirDNI() {
-        System.out.println("Profesor: " + getDNI());
+        System.out.println("Directivo: " + getDNI());
     }
 
     @Override
     public String toString() {
-        return "Profesor{ " +
+        return "Directivo{ " +
                 "nombre='" + getNombre() + '\'' +
                 ", apellidos='" + getApellidos() + '\'' +
                 ", DNI='" + getDNI() + '\'' +
-                ", edad=" + getEdad() + "\n" +
+                ", edad=" + getEdad() +
+                ", cargo= " + cargo + "\n" +
                 ", Grados impartidos= " + Arrays.toString(gradosImpartidos) + "\n" +
                 '}';
     }

@@ -1,4 +1,4 @@
-package org.example;
+package org.Ejercicio_1;
 
 public class Alumno extends Persona {
     private String NIA;
