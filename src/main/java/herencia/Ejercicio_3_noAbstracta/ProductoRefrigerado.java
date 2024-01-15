@@ -1,4 +1,4 @@
-package herencia.Ejercicio_3;
+package herencia.Ejercicio_3_noAbstracta;
 
 public class ProductoRefrigerado extends Producto {
     private int codigoOrganismo;
@@ -11,6 +11,7 @@ public class ProductoRefrigerado extends Producto {
     public int getCodigoOrganismo() {
         return codigoOrganismo;
     }
+
     @Override
     public String toString() {
         return "Producto{" +

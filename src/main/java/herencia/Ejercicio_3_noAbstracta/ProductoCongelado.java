@@ -1,6 +1,6 @@
-package herencia.Ejercicio_3;
+package herencia.Ejercicio_3_noAbstracta;
 
-public class ProductoCongelado extends Producto{
+public class ProductoCongelado extends Producto {
     private int temperaturaCongelacion;
 
     public ProductoCongelado(String fechaCaducidad, int numeroLote, int temperaturaCongelacion) {
@@ -11,6 +11,7 @@ public class ProductoCongelado extends Producto{
     public int getTemperaturaCongelacion() {
         return temperaturaCongelacion;
     }
+
     @Override
     public String toString() {
         return "Producto{" +

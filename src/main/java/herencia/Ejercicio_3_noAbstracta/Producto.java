@@ -1,4 +1,4 @@
-package herencia.Ejercicio_3;
+package herencia.Ejercicio_3_noAbstracta;
 
 public class Producto {
     private String fechaCaducidad;

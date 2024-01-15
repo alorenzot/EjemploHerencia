@@ -3,8 +3,8 @@ package herencia.Ejercicio_4;
 public class Vehiculo {
     private int velocidad;
 
-    public Vehiculo (int velocidad){
-        this.velocidad=velocidad;
+    public Vehiculo(int velocidad) {
+        this.velocidad = velocidad;
     }
 
     public int getVelocidad() {
@@ -14,10 +14,12 @@ public class Vehiculo {
     public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
     }
-    public void subirVelocidad(){
+
+    public void subirVelocidad() {
         velocidad++;
     }
-    public void bajarVelocidad(){
+
+    public void bajarVelocidad() {
         velocidad--;
     }
 }

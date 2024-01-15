@@ -3,18 +3,23 @@ package herencia.Ejercicio_2;
 public class Pelicula extends Multimedia {
     private String actorPrincipal;
     private String actrizPrincipal;
-    private static String animacion = "Animación";
+    private static final String ANIMACION = "Animación";
 
     public Pelicula(String titulo, String autor, Formato formato, float duracion, String actorPrincipal, String actrizPrincipal) {
         super(titulo, autor, formato, duracion);
-        this.actorPrincipal = actorPrincipal;
-        this.actrizPrincipal = actrizPrincipal;
+        if (actorPrincipal == null && actrizPrincipal == null) {
+            this.actorPrincipal = ANIMACION;
+            this.actrizPrincipal = ANIMACION;
+        } else {
+            this.actorPrincipal = actorPrincipal;
+            this.actrizPrincipal = actrizPrincipal;
+        }
     }
 
     public Pelicula(String titulo, String autor, Formato formato, float duracion) {
         super(titulo, autor, formato, duracion);
-        this.actorPrincipal = animacion;
-        this.actrizPrincipal = animacion;
+        this.actorPrincipal = ANIMACION;
+        this.actrizPrincipal = ANIMACION;
     }
 
     @Override
