@@ -1,9 +1,5 @@
 package herencia.Ejercicio_2;
 
-import herencia.Ejercicio_1.Persona;
-
-import java.util.Objects;
-
 public class Multimedia {
     private String titulo;
     private String autor;
