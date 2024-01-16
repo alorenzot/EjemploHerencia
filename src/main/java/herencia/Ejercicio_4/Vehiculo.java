@@ -1,11 +1,15 @@
 package herencia.Ejercicio_4;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private int velocidad;
 
-    public Vehiculo(int velocidad) {
-        this.velocidad = velocidad;
+    public Vehiculo() {
+        this.velocidad =0;
     }
+
+    public abstract boolean incrementarVelocidad(int cantidad);
+    public abstract boolean decrementarVelocidad(int cantidad);
+
 
     public int getVelocidad() {
         return velocidad;
@@ -15,11 +19,20 @@ public class Vehiculo {
         this.velocidad = velocidad;
     }
 
-    public void subirVelocidad() {
+    public void incrementarVelocidad() {
         velocidad++;
     }
 
-    public void bajarVelocidad() {
-        velocidad--;
+    public void decrementarVelocidad() {
+        if (velocidad >= 0){
+            velocidad--;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Vehiculo:" +
+                " velocidad: " + velocidad + " km/h"
+                ;
     }
 }
