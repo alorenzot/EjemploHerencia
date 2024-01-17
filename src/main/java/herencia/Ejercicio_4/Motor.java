@@ -36,10 +36,9 @@ public abstract class Motor extends Vehiculo{
 
     @Override
     public String toString() {
-        return "Motor: \n" +
+        return  super.toString() + "\n" +
                 " motor: " + tipoMotor + "\n" +
-                " marchas: " + marchas + "\n" +
-                " velocidad: " + getVelocidad() + " km/h"
+                " marchas: " + marchas + "\n"
                 ;
     }
 }

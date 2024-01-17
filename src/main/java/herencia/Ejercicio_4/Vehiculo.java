@@ -31,7 +31,7 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo:" +
+        return "Vehiculo: \n" +
                 " velocidad: " + velocidad + " km/h"
                 ;
     }

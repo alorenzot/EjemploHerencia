@@ -10,8 +10,13 @@ public class Coche extends Motor{
     @Override
     public boolean incrementarVelocidad(int cantidad) {
         if (cantidad<=0) return false;
-        if (cantidad+getVelocidad()>=200) return false;
-        else setVelocidad(getVelocidad()+cantidad);
+        if (cantidad>230) return false;
+
+        //Math min elige el numero más pequeño
+        //de manera de que si la suma supera el límite,
+        //establece el limite como la velocidad
+        setVelocidad(Math.min(getVelocidad()+cantidad,230));
+
         return true;
     }
 
@@ -19,16 +24,18 @@ public class Coche extends Motor{
     public boolean decrementarVelocidad(int cantidad) {
         if (cantidad<=0) return false;
         if (cantidad+getVelocidad()<=0) return false;
-        else setVelocidad(getVelocidad()+cantidad);
+
+        setVelocidad(getVelocidad()+cantidad);
+        if (getVelocidad()<0)
+            setVelocidad(0);
+
         return true;
     }
 
     @Override
     public String toString() {
-        return "Coche: \n" +
-                " motor: " + getTipoMotor() + '\n' +
-                " marchas: " + getMarchas() + '\n' +
-                " matricula: " + matricula + '\n' +
-                " velocidad: " + getVelocidad()+ " km/h\n";
+        return super.toString() +
+                " matricula: " + matricula + '\n';
+
     }
 }
