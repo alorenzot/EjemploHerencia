@@ -2,13 +2,16 @@ package herencia.Ejercicio_5;
 
 public class Test {
     public static void main(String[] args) {
-        Secretario s = new Secretario("n", "a", "5", "asd23", 456123789, 1000f, "A1", 456);
-        System.out.println(s);
-        s.setAntiguedad(1);
+        Empleado[] empleados = {
+                new Vendedor("Luis","Garcia","111","una",66666,1000f,new Coche("Tesla","3","1111BXG"),"A", 5f, null),
+                new JefeDeZona("Carlos","Garcia","111","una",6666,2000f,"B", null, new Coche("Tesla","3","1111BXG"), null),
+                new Secretario("Manuel","Garcia","111","una",555,1000f,"C",456)
+        };
 
-        System.out.println(s);
-        s.setAntiguedad(2);
-        s.incrementarSalario();
-        System.out.println(s);
+        for (Empleado e : empleados)
+            e.incrementarSalario();
+
+        for(Empleado e: empleados)
+            System.out.println(e);
     }
 }
