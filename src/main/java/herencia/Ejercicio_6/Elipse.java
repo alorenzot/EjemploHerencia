@@ -24,4 +24,11 @@ public class Elipse extends Forma{
         radioMenor*=escala;
         radioMayor*=escala;
     }
+    @Override
+    public String toString() {
+        return super.toString() +
+                " Radio menor: " + radioMenor + "\n" +
+                " Raido mayor: " + radioMayor + "\n"
+                ;
+    }
 }
