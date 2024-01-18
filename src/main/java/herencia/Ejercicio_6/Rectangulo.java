@@ -10,6 +10,14 @@ public class Rectangulo extends Forma{
         this.ladoMayor=ladoMayor;
     }
 
+    public float getLadoMenor() {
+        return ladoMenor;
+    }
+
+    public float getLadoMayor() {
+        return ladoMayor;
+    }
+
     @Override
     public float calcularArea(){
         return ladoMenor*ladoMayor;
@@ -26,8 +34,8 @@ public class Rectangulo extends Forma{
     @Override
     public String toString() {
         return super.toString() +
-                " Lado menor: " + ladoMenor + "\n" +
-                " Lado mayor: " + ladoMayor + "\n"
+                " Lado menor: " + ladoMenor + "cm\n" +
+                " Lado mayor: " + ladoMayor + "cm\n"
                 ;
     }
 }

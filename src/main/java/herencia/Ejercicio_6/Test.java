@@ -27,6 +27,9 @@ public class Test {
                     break;
             }
         }
+        for(Forma f:formas){
+            System.out.println(f);
+        }
 
 
     }

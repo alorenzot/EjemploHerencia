@@ -6,6 +6,12 @@ public class Cuadrado extends Rectangulo{
         super(nombre, coordenada, color, ladoMenor, ladoMayor);
     }
 
+    @Override
+    public String toString() {
+        return super.toString() +
+                " Lado: " + getLadoMenor() + "cm\n"
+                ;
+    }
 
 
 }

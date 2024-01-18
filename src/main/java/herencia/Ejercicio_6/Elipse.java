@@ -10,6 +10,14 @@ public class Elipse extends Forma{
         this.radioMayor=radioMayor;
     }
 
+    public float getRadioMenor() {
+        return radioMenor;
+    }
+
+    public float getRadioMayor() {
+        return radioMayor;
+    }
+
     @Override
     public float calcularArea() {
         return (float) (Math.PI*(radioMayor*radioMenor));
@@ -27,8 +35,8 @@ public class Elipse extends Forma{
     @Override
     public String toString() {
         return super.toString() +
-                " Radio menor: " + radioMenor + "\n" +
-                " Raido mayor: " + radioMayor + "\n"
+                " Radio menor: " + radioMenor + "cm\n" +
+                " Raido mayor: " + radioMayor + "cm\n"
                 ;
     }
 }
