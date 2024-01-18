@@ -10,21 +10,28 @@ public abstract class Forma {
         this.coordenada = coordenada;
         this.color = color;
     }
+
     public abstract float calcularArea();
+
     public abstract float calcularPerimetro();
+
     public abstract void cambiarTamaño(float escala);
-    public void moverForma(Punto punto){
-        coordenada=punto;
+
+    public void moverForma(Punto punto) {
+        coordenada = punto;
     }
+
     public String getColor() {
         return color;
     }
+
     public void setColor(String color) {
         this.color = color;
     }
+
     @Override
     public String toString() {
-        return " Nombre: "+ nombre +"\n" +
+        return " Nombre: " + nombre + "\n" +
                 " Coordenada: " + coordenada + "\n" +
                 " Color: " + color + "\n"
                 ;

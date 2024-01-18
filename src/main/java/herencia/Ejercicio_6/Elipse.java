@@ -1,13 +1,13 @@
 package herencia.Ejercicio_6;
 
-public class Elipse extends Forma{
+public class Elipse extends Forma {
     private float radioMenor;
     private float radioMayor;
 
     public Elipse(char nombre, Punto coordenada, String color, float radioMenor, float radioMayor) {
         super(nombre, coordenada, color);
-        this.radioMenor=radioMenor;
-        this.radioMayor=radioMayor;
+        this.radioMenor = radioMenor;
+        this.radioMayor = radioMayor;
     }
 
     public float getRadioMenor() {
@@ -20,18 +20,20 @@ public class Elipse extends Forma{
 
     @Override
     public float calcularArea() {
-        return (float) (Math.PI*(radioMayor*radioMenor));
+        return (float) (Math.PI * (radioMayor * radioMenor));
     }
+
     @Override
     public float calcularPerimetro() {
-        return (float) (2*Math.PI*Math.sqrt((((radioMenor*radioMayor)+ (radioMenor*radioMayor))/2)));
+        return (float) (2 * Math.PI * Math.sqrt((((radioMenor * radioMayor) + (radioMenor * radioMayor)) / 2)));
     }
 
     @Override
     public void cambiarTamaño(float escala) {
-        radioMenor*=escala;
-        radioMayor*=escala;
+        radioMenor *= escala;
+        radioMayor *= escala;
     }
+
     @Override
     public String toString() {
         return super.toString() +

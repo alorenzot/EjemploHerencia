@@ -1,13 +1,13 @@
 package herencia.Ejercicio_6;
 
-public class Rectangulo extends Forma{
+public class Rectangulo extends Forma {
     private float ladoMenor;
     private float ladoMayor;
 
     public Rectangulo(char nombre, Punto coordenada, String color, float ladoMenor, float ladoMayor) {
         super(nombre, coordenada, color);
-        this.ladoMenor=ladoMenor;
-        this.ladoMayor=ladoMayor;
+        this.ladoMenor = ladoMenor;
+        this.ladoMayor = ladoMayor;
     }
 
     public float getLadoMenor() {
@@ -19,18 +19,21 @@ public class Rectangulo extends Forma{
     }
 
     @Override
-    public float calcularArea(){
-        return ladoMenor*ladoMayor;
+    public float calcularArea() {
+        return ladoMenor * ladoMayor;
     }
+
     @Override
-    public float calcularPerimetro(){
-        return (2*ladoMenor) + (2*ladoMayor);
+    public float calcularPerimetro() {
+        return (2 * ladoMenor) + (2 * ladoMayor);
     }
+
     @Override
-    public void cambiarTamaño(float escala){
-        ladoMenor*=escala;
-        ladoMayor*=escala;
+    public void cambiarTamaño(float escala) {
+        ladoMenor *= escala;
+        ladoMayor *= escala;
     }
+
     @Override
     public String toString() {
         return super.toString() +
