@@ -9,21 +9,21 @@ public class Test {
             switch (randomShape) {
                 case 1:
                     float randomRadius = (float) (Math.random() * 10);
-                    formas[i] = new Circulo('○', new Punto('a', 1), color, randomRadius, randomRadius);
+                    formas[i] = new Circulo('○', Punto.getPuntoAleatorio(), color, randomRadius, randomRadius);
                     break;
                 case 2:
                     float randomLowerRadius = (float) (Math.random() * 10);
                     float randomHigherRadius = (float) (Math.random() * 10);
-                    formas[i] = new Elipse('⬭', new Punto('a', 1), color, randomLowerRadius, randomHigherRadius);
+                    formas[i] = new Elipse('⬭', Punto.getPuntoAleatorio(), color, randomLowerRadius, randomHigherRadius);
                     break;
                 case 3:
                     float randomSide = (float) (Math.random() * 10);
-                    formas[i] = new Cuadrado('□', new Punto('a', 1), color, randomSide, randomSide);
+                    formas[i] = new Cuadrado('□', Punto.getPuntoAleatorio(), color, randomSide, randomSide);
                     break;
                 default:
                     float randomLowerSide = (float) (Math.random() * 10);
                     float randomHigherSide = (float) (Math.random() * 10);
-                    formas[i] = new Rectangulo('▭', new Punto('a', 1), color, randomLowerSide, randomHigherSide);
+                    formas[i] = new Rectangulo('▭', Punto.getPuntoAleatorio(), color, randomLowerSide, randomHigherSide);
                     break;
             }
         }

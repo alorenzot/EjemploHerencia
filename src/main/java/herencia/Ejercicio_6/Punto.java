@@ -9,6 +9,13 @@ public class Punto {
         this.number = number;
     }
 
+    public static Punto getPuntoAleatorio(){
+        char[] letters={'a','b','c','d','e','f','g','h','i','j'};
+        int random = (char)(Math.random()*10);
+
+        return new Punto(letters[random],random);
+    }
+
 
     public char getLetter() {
         return letter;
