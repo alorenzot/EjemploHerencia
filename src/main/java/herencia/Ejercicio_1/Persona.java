@@ -54,11 +54,11 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "\nPersona{" +
                 "nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
                 ", DNI='" + DNI + '\'' +
                 ", edad=" + edad +
-                '}';
+                "}";
     }
 }
