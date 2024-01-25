@@ -13,6 +13,11 @@ public class Persona {
         this.edad = edad;
     }
 
+    public Persona(String nombre, String apellidos) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -57,8 +62,8 @@ public class Persona {
         return "\nPersona{" +
                 "nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
-                ", DNI='" + DNI + '\'' +
-                ", edad=" + edad +
+                //", DNI='" + DNI + '\'' +
+                //", edad=" + edad +
                 "}";
     }
 }

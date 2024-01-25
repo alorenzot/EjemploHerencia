@@ -1,4 +1,4 @@
-package herencia.Listas.example;
+package herencia.Listas;
 
 import herencia.Ejercicio_1.Persona;
 

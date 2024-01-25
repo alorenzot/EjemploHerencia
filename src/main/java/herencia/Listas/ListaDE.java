@@ -1,4 +1,4 @@
-package herencia.Listas.example;
+package herencia.Listas;
 
 public class ListaDE<E> {
     private int size;
