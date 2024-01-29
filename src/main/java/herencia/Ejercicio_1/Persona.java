@@ -1,6 +1,14 @@
 package herencia.Ejercicio_1;
 
-public class Persona {
+import java.util.Comparator;
+
+public class Persona implements Comparable<Persona> {
+    public static Comparator<Persona> SORT_BY_AGE = new Comparator<Persona>() {
+        @Override
+        public int compare(Persona p1, Persona p2) {
+            return p1.edad-p2.edad;
+        }
+    };
     private String nombre;
     private String apellidos;
     private String DNI;
@@ -16,6 +24,12 @@ public class Persona {
     public Persona(String nombre, String apellidos) {
         this.nombre = nombre;
         this.apellidos = apellidos;
+    }
+
+    public Persona(String nombre, String apellidos, int edad) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
     }
 
     public String getNombre() {
@@ -53,7 +67,12 @@ public class Persona {
         Persona p = (Persona) obj;
         return p.DNI == DNI &&
                 p.nombre.equals(nombre) &&
-                p.apellidos.equals(apellidos);
+                p.apellidos.equals(apellidos) &&
+                p.edad==edad;
+    }
+    @Override
+    public int hashCode(){
+        return nombre.hashCode();
     }
 
 
@@ -63,7 +82,17 @@ public class Persona {
                 "nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
                 //", DNI='" + DNI + '\'' +
-                //", edad=" + edad +
+                ", edad=" + edad +
                 "}";
     }
+
+    @Override
+    public int compareTo(Persona o){
+        if (o.apellidos.equals(apellidos)) {
+            return nombre.compareTo(o.nombre);
+        }
+
+        return apellidos.compareTo(o.apellidos);
+    }
+
 }
